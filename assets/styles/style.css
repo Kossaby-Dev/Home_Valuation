@@ -30,15 +30,21 @@ ul{
     padding: 0;
 }
 
+h1{
+    color: var(--tertiary-color);
+}
+
 h2{
   font-weight: bold;
   font-size:2.4rem;
+  color: var(--tertiary-color);
 }
 
 h3{
     font-weight: bold;
     font-size: 1.8rem;
     margin: 0;
+    color: var(--tertiary-color);
 }
 
 p{
@@ -55,6 +61,7 @@ body{
     font-family: 'Lato', sans-serif;
     color: var(--tertiary-color);
     font-size: 1.4rem;
+    color: var(--tertiary-color);
 }
 
 .vp_container{
@@ -173,7 +180,7 @@ column-gap: 75px;
 }
 
 .vp_booking-details > h2{
-   
+    color: #FFFFFF;
 }
 
 .vp_booking-details > p{
@@ -278,5 +285,52 @@ column-gap:26px;
 }
 
 .vp_guides-image-box > img{
+   
+}
+
+
+.vp_reviews{
 
 }
+
+.vp_reviews > h2{
+  padding-bottom: 4rem;
+}
+
+.vp_reviews-container{
+ display: flex;
+ flex-direction: column;
+ row-gap: 25px;
+}
+
+.vp_reviews-reaview{
+  padding: 4.5rem;
+  background-color: rgba(51, 51, 51,.08);
+  border-radius:10px;
+}
+
+
+.vp_reviews-reaview > ul{
+
+}
+
+
+.vp_reviews-reaview > h3{
+  padding-top: 1rem;
+  padding-bottom: 1.8rem;
+  font-size: 1.7rem;
+}
+
+.vp_reviews-reaview > p{
+ font-size: 1.6rem;
+}
+
+.vp_reviews-reaview > h4{
+ font-size:1.4rem;
+}
+
+.vp_reaview-date{
+ font-weight: bold;
+ padding-top: 2.5rem;
+}
+
