@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
-    <header>
-        <div>
+    <header class="vp_header vp_container">
+        <div class="vp_header-box">
             <h1>What is Your Roseville Home Worth Now?</h1>
             <p>Recent home sales have affected your home’s value! Get your home’s new value estimate instantly for free!</p>
-            <div>
-                <form action="">
-                    <input type="text" placeholder="Enter your home address">
-                    <button type="submit">
+            <div class="vp_header-form-container">
+                <form class="vp_header-form" action="">
+                    <input class="vp_input vp_input-form" type="text" placeholder="Enter your home address">
+                    <button class="vp_btn vp_btn-form" type="submit">
                         Get value estimate
                         <img src="./assets/images/icon-arrow.svg" alt="" srcset="">
                     </button>
@@ -27,60 +27,68 @@
             </div>
         </div>
     </header>
-    <main>
-        <section>
+    <main class="vp_container">
+        <section class="vp_property">
             <h2>Discover the value of your property</h2>
-            <div>
-                <div>
+            <div class="vp_property-container">
+                <div class="vp_property-item">
                     <img src="./assets/images/icon-track.svg" alt="" srcset="">
                     <h3>Track your home’s value</h3>
                     <p>Instantly learn your home’s value and how much you could sell for in today’s market.</p>
                 </div>
-                <div>
+                <div class="vp_property-item">
                     <img src="./assets/images/icon-trends.svg" alt="" srcset="">
                     <h3>See local market trends</h3>
                     <p>Stay up to date on market changes and find out how much homes like yours have sold in the past year.</p>
                 </div>
-                <div>
+                <div class="vp_property-item">
                     <img src="./assets/images/icon-report.svg" alt="" srcset="">
                     <h3>Get a free monthly home report</h3>
                     <p>Receive a monthly email with updates about your home value and how it’s changing.</p>
                 </div>
             </div>
         </section>
-        <section>
-            <div>
-                <h2>Book an in-person valuation</h2>
-                <p>Get the most accurate valuation based on:</p>
-                <ul>
-                    <li><img src="./assets/images/icon-check.svg" alt="" srcset=""> Your unique property features</li>
-                    <li><img src="./assets/images/icon-check.svg" alt="" srcset=""> Our knowledge of the area</li>
-                    <li><img src="./assets/images/icon-check.svg" alt="" srcset=""> The latest changes in the local market</li>
-                </ul>
-                <a href="">Book now <img src="./assets/images/icon-arrow-2.svg" alt="" srcset=""></a>
-            </div>
-            <div>
-                <img src="./assets/images/illustration.svg" alt="" srcset="">
+        <section class="vp_booking">
+            <div class="vp_booking-container">
+                <div class="vp_booking-details" >
+                    <h2>Book an in-person valuation</h2>
+                    <p>Get the most accurate valuation based on:</p>
+                    <ul class="vp_booking-details-list">
+                        <li class="vp_booking-details-item"><img src="./assets/images/icon-check.svg" alt="" srcset=""> Your unique property features</li>
+                        <li class="vp_booking-details-item"><img src="./assets/images/icon-check.svg" alt="" srcset=""> Our knowledge of the area</li>
+                        <li class="vp_booking-details-item"><img src="./assets/images/icon-check.svg" alt="" srcset=""> The latest changes in the local market</li>
+                    </ul>
+                    <a href="" class="vp_btn vp_btn-booking">Book now <img src="./assets/images/icon-arrow-2.svg" alt="" srcset=""></a>
+                </div>
+                <div class="vp_booking-image-box">
+                    <img class="vp_booking-image" src="./assets/images/illustration.svg" alt="" srcset="">
+                </div>
             </div>
         </section>
-        <section>
+        <section class="vp_guides">
             <h2>Pump up the value with our guides</h2>
             <p>If you’re looking to sell quickly or boost the value of your home, our expert free guides will help you do it like a pro.</p>
-            <div>
-                <div>
-                    <img src="./assets/images/guide-image-1.png" alt="" srcset="">
+            <div class="vp_guides-container">
+                <div class="vp_guides-card">
+                    <div class="vp_guides-image-box">
+                        <img src="./assets/images/guide-image-1.png" alt="" srcset="">
+                    </div>
                     <h3>The ultimate guide to selling your Home</h3>
                     <a href="">Download <img src="./assets/images/icon-download.svg" alt="" srcset=""></a>
                 </div>
-                <div>
-                    <img src="./assets/images/guide-image-2.png" alt="" srcset="">
+                <div class="vp_guides-card">
+                    <div class="vp_guides-image-box">
+                        <img src="./assets/images/guide-image-2.png" alt="" srcset="">
+                    </div>
                     <h3>How to increase your home value</h3>
                     <a href="">Download <img src="./assets/images/icon-download.svg" alt="" srcset=""></a>
                 </div>
-                <div>
-                    <img src="./assets/images/guide-image-2-1.png" alt="" srcset="">
+                <div class="vp_guides-card">
+                    <div class="vp_guides-image-box">
+                        <img src="./assets/images/guide-image-2-1.png" alt="" srcset="">
+                    </div>
                     <h3>25 factors that impact your home value</h3>
-                    <a href="">Download <img src="./assets/images/icon-download.svg" alt="" srcset=""></a>
+                    <a href=""> Download <img src="./assets/images/icon-download.svg" alt="" srcset=""></a>
                 </div>
             </div>
         </section>
