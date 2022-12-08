@@ -11,20 +11,27 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/map.css">
 </head>
 <body>
-    <header class="vp_header vp_container">
-        <div class="vp_header-box">
-            <h1>What is Your Roseville Home Worth Now?</h1>
-            <p>Recent home sales have affected your home’s value! Get your home’s new value estimate instantly for free!</p>
-            <div class="vp_header-form-container">
-                <form class="vp_header-form" action="">
-                    <input class="vp_input vp_input-form" type="text" placeholder="Enter your home address">
-                    <button class="vp_btn vp_btn-form" type="submit">
-                        Get value estimate
-                        <img src="./assets/images/icon-arrow.svg" alt="" srcset="">
-                    </button>
-                </form>
+    <header class="vp_header">
+        <div class="vp_header-conatiner vp_container">
+            <div class="vp_header-box">
+                <h2>Your report is ready for</h2>
+                <h1>121 Tomlinson Dr, Folsom, CA 95630, USA 95630</h1>
+                <div class="vp_header-form-container">
+                    <form class="vp_header-form" action="./index.html">
+                        <input class="vp_input vp_input-form" type="text" placeholder="Name">
+                        <select name="" class="vp_input form-select vp_input-form" aria-label="Default select example">
+                            <option value="" selected>What are you interested in?</option>
+                            <option value="">Casablanca</option>
+                        </select>
+                        <button class="vp_btn vp_btn-form" type="submit">
+                            View my report
+                            <img src="./assets/images/icon-arrow.svg" alt="" srcset="">
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </header>
@@ -59,12 +66,68 @@
                         <li class="vp_booking-details-item"><img src="./assets/images/icon-check.svg" alt="" srcset=""> Our knowledge of the area</li>
                         <li class="vp_booking-details-item"><img src="./assets/images/icon-check.svg" alt="" srcset=""> The latest changes in the local market</li>
                     </ul>
-                    <a href="" class="vp_btn vp_btn-booking">Book now <img src="./assets/images/icon-arrow-2.svg" alt="" srcset=""></a>
+                    <button class="vp_btn vp_btn-booking" data-bs-toggle="modal" data-bs-target="#vp_booking-model">Book now <img src="./assets/images/icon-arrow-2.svg" alt="" srcset=""></button>
                 </div>
                 <div class="vp_booking-image-box">
                     <img class="vp_booking-image" src="./assets/images/illustration.svg" alt="" srcset="">
                 </div>
             </div>
+
+        </section>
+        <section class="vp_popup-section">
+            <div class="modal fade" id="vp_booking-model" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="vp_button-container">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <h2>Book an in-person valuation</h2>
+                        <p>Get the most accurate valuation based on:</p>
+                        <ul class="vp_booking-details-list">
+                            <li class="vp_booking-details-item"><img src="./assets/images/icon-check.svg" alt="" srcset=""> Your unique property features</li>
+                            <li class="vp_booking-details-item"><img src="./assets/images/icon-check.svg" alt="" srcset=""> Our knowledge of the area</li>
+                            <li class="vp_booking-details-item"><img src="./assets/images/icon-check.svg" alt="" srcset=""> The latest changes in the local market</li>
+                        </ul>
+                        <form action="" class="vp_booking-form" data-bs-toggle="modal" data-bs-target="#vp_booking-end-model">
+                            <div class="mb-3">
+                                <label for="vp_booking-name-input" class="form-label vp_input-lable">Name</label>
+                                <input type="text" class="vp_input form-control" id="vp_booking-name-input" placeholder="John Doe">
+                              </div>
+                              <div class="mb-3">
+                                <label for="vp_booking-adress-input" class="form-label vp_input-lable">Address</label>
+                                <input type="text" class="vp_input form-control" id="vp_booking-adress-input" placeholder="123 Main Street, Los Angeles, CA">
+                              </div>
+                              <div class="mb-3">
+                                <label for="vp_booking-email-input" class="form-label vp_input-lable">Email address</label>
+                                <input type="email" class="vp_input form-control" id="vp_booking-email-input" placeholder="john@example.com">
+                              </div>
+                              <div class="mb-3">
+                                <label for="vp_booking-phone-input" class="form-label vp_input-lable">Phone Number</label>
+                                <input type="text" class="vp_input form-control" id="vp_booking-phone-input" placeholder="name@example.com">
+                              </div>
+                              <div class="mb-3">
+                                    <input type="submit" class="vp_btn vp_btn-form vp_btn-form--booking" value="Send" >
+                              </div>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="vp_booking-end-model" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="vp_button-container">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <h2>Thank you</h2>
+                        <p>Your enquiry has been sent successully. We will give you a call soon to make arrangements for a valuation visit.</p>
+                        <a href="" class="vp_link" data-bs-dismiss="modal" aria-label="Close">Close</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </section>
         <section class="vp_guides">
             <h2>Pump up the value with our guides</h2>
@@ -75,23 +138,74 @@
                         <img src="./assets/images/guide-image-1.png" alt="" srcset="">
                     </div>
                     <h3>The ultimate guide to selling your Home</h3>
-                    <a href="">Download <img src="./assets/images/icon-download.svg" alt="" srcset=""></a>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#vp_guides-model">Download <img src="./assets/images/icon-download.svg" alt="" srcset=""></a>
                 </div>
                 <div class="vp_guides-card">
                     <div class="vp_guides-image-box">
                         <img src="./assets/images/guide-image-2.png" alt="" srcset="">
                     </div>
                     <h3>How to increase your home value</h3>
-                    <a href="">Download <img src="./assets/images/icon-download.svg" alt="" srcset=""></a>
+                    <a href=""  data-bs-toggle="modal" data-bs-target="#vp_guides-model" >Download <img src="./assets/images/icon-download.svg" alt="" srcset=""></a>
                 </div>
                 <div class="vp_guides-card">
                     <div class="vp_guides-image-box">
                         <img src="./assets/images/guide-image-2-1.png" alt="" srcset="">
                     </div>
                     <h3>25 factors that impact your home value</h3>
-                    <a href=""> Download <img src="./assets/images/icon-download.svg" alt="" srcset=""></a>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#vp_guides-model" > Download <img src="./assets/images/icon-download.svg" alt="" srcset=""></a>
                 </div>
             </div>
+        </section>
+        <section class="vp_popup-section">
+            <div class="modal fade" id="vp_guides-model" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="vp_button-container">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="vp_guides-card">
+                            <div class="vp_guides-image-box">
+                                <img src="./assets/images/guide-image-1.png" alt="" srcset="">
+                            </div>
+                            <h3>The ultimate guide to selling your Home</h3>
+                            <p>Learn what to expect every step of the way, how to negotiate your home sale, tips from experienced realtors and more.</p>
+                        </div>
+                        <form class="vp_booking-form" data-bs-toggle="modal" data-bs-target="#vp_guides-end-model">
+                            <div class="mb-3">
+                                <label for="vp_booking-name-input" class="form-label vp_input-lable">Name</label>
+                                <input type="text" class="vp_input form-control" id="vp_booking-name-input" placeholder="John Doe">
+                              </div>
+                              <div class="mb-3">
+                                <label for="vp_booking-email-input" class="form-label vp_input-lable">Email address</label>
+                                <input type="email" class="vp_input form-control" id="vp_booking-email-input" placeholder="john@example.com">
+                              </div>
+                              <div class="mb-3">
+                                <label for="vp_booking-phone-input" class="form-label vp_input-lable">Phone Number</label>
+                                <input type="text" class="vp_input form-control" id="vp_booking-phone-input" placeholder="name@example.com">
+                              </div>
+                              <div class="mb-3">
+                                    <input type="submit" class="vp_btn vp_btn-form vp_btn-form--booking" value="Download free guide">
+                              </div>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="vp_guides-end-model" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="vp_button-container">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <h2>Thank you</h2>
+                        <p>Your enquiry has been sent successully. We will give you a call soon to make arrangements for a valuation visit.</p>
+                        <a href="" class="vp_link" data-bs-dismiss="modal" aria-label="Close">Close</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </section>
         <section class="vp_reviews">
             <h2>Recent Reviews</h2>
@@ -154,8 +268,8 @@
             </div>
         </section>
     </main>
-    <footer class="vp_container vp_footer">
-        <div class="vp_footer-container">
+    <footer class="vp_footer">
+        <div class="vp_footer-container vp_container">
             <div class="vp_footer-info vp_footer-box">
                 <div class="vp_footer-info-image-box">
                     <img src="./assets/images/Mask Group 3.png" alt="">
@@ -168,19 +282,19 @@
                 </h4>
                 <ul>
                     <li>
-                        <span>Address:</span>123 Main Street, Folsom, CA
+                        <span>Address:</span> 123 Main Street, Folsom, CA
                     </li>
                     <li>
-                        <span>Phone:</span>202-555-0108
+                        <span>Phone:</span> 202-555-0108
                     </li>
                     <li>
-                        <span>Office:</span>202-555-0187 
+                        <span>Office:</span> 202-555-0187 
                     </li>
                     <li>
-                        <span>Email:</span>jake@howardhanna.com 
+                        <span>Email:</span> jake@howardhanna.com 
                     </li>
                     <li>
-                        <span>License:</span>123456, CA
+                        <span>License:</span> 123456, CA
                     </li>
                 </ul>
                 <div>
@@ -232,5 +346,6 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="./assets/scripts/script.js"></script>
 </body>
 </html>
