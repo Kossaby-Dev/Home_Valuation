@@ -67,6 +67,8 @@ body{
 
 .vp_container{
     padding: 0rem 12.3rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .vp_header{
@@ -74,7 +76,11 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10.8rem 25.5rem;
+    
+}
+
+.vp_header-conatiner{
+  padding: 10.8rem 25.5rem;
 }
 
 .vp_header-box{
