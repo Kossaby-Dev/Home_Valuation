@@ -3,7 +3,9 @@
     justify-content:end;
     padding-right: 12.3rem;
 }
-
+.vp_header-map{
+    background-image: url(../images/google_maps.png);
+}
 .vp_header-box{
     width: 36.6rem;
     padding: 2.5rem 3rem;
