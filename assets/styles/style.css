@@ -28,6 +28,7 @@ button:hover{
 ul{
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 h1{
@@ -310,8 +311,13 @@ column-gap:26px;
 }
 
 
-.vp_reviews-reaview > ul{
+.vp_reviews_rating{
 
+}
+
+.vp_reviews_rating > i{
+  font-size:18px;
+  color: var(--primary-color);
 }
 
 
@@ -377,4 +383,156 @@ column-gap:26px;
      width:fit-content;
      align-items: center;
      column-gap: 5px;
+}
+
+.vp_footer{
+  background-color: #F4F4F4;
+  padding-top: 8rem;
+  padding-bottom: 11.5rem;
+}
+
+.vp_footer-container{
+  display: flex;
+}
+
+.vp_footer-info{
+ flex:1 0 30%;
+}
+
+.vp_footer-info > h3{
+padding-top: 1rem;
+}
+
+.vp_footer-info > h4{
+ font-size:1.6rem;
+ font-weight: bold;
+ padding-bottom: 1.5rem;
+}
+
+.vp_footer-info-image-box{
+
+}
+
+.vp_footer-info-image-box > img{
+
+}
+
+
+.vp_footer-info > ul{
+font-size: 1.5rem;
+padding-bottom: 2rem;
+}
+
+
+.vp_footer-info > ul >li{
+padding: 3px 0px;
+}
+
+.vp_footer-info > ul > li > span{
+ font-weight: bold;
+}
+
+
+.vp_footer-box{
+
+}
+
+.vp_footer-link{
+  flex:1 1 60%;
+}
+
+.vp_footer-links-container{
+  display: flex;
+
+}
+
+.vp_footer-links-useful-box{
+  flex: 1 1 50%;
+}
+
+.vp_footer-links-useful-box > h3{
+ padding-bottom: 15px;
+}
+
+.vp_footer-links-useful{
+ display:flex;
+ flex-direction: column;
+ row-gap: 10px;
+ 
+}
+
+.vp_footer-links-useful > a{
+ display: block;
+ border-bottom: solid var(--secondary-color) 3px;
+ font-size: 1.5rem; 
+ width: fit-content;
+}
+
+.vp_footer-links-connect-box{
+  flex: 1 1 50%;
+}
+
+.vp_footer-links-connect-box > h3{
+  padding-bottom: 15px;
+}
+
+.vp_footer-links-connect{
+display: flex;
+ column-gap: 8px;
+
+}
+
+.vp_footer-link-connect{
+ background-color: var(--primary-color);
+ width: 35px;
+ height:35px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 100%;
+}
+
+.vp_footer-link-connect > img{
+
+}
+
+
+.vp_footer-links > hr{
+  margin-top: 6.5rem;
+  margin-bottom:6.5rem;
+}
+
+
+.vp_footer-copyright{
+
+}
+
+.vp_footer-copyright-image-box{
+
+}
+
+.vp_footer-copyright-image-box > img{
+
+}
+
+.vp_footer-copyright-text{
+ padding-top: 15px;
+}
+
+.vp_footer-copyright-text > p{
+  color: #7B7B7B;
+  font-size:1.2rem;
+}
+
+.vp_footer-copyright-text > p:nth-child(1){
+
+}
+
+.vp_footer-copyright-text > p:nth-child(2){
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+
+.vp_footer-copyright-text > p:nth-child(3){
+  
 }
